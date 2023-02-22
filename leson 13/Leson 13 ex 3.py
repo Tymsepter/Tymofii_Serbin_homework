@@ -4,6 +4,7 @@ def choose_func(nums: list, func1, func2):
     else:
         return func2(nums)
 
+
 # Assertions
 
 nums1 = [1, 2, 3, 4, 5]
