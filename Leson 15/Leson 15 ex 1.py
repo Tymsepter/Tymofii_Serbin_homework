@@ -5,9 +5,10 @@ class Person:
         self.age = age
 
     def talk(self):
-        print(f"Hello {self.firstname} {self.lastname} and I`m {self.age} years old")
+        print(f"Hello, my name is {self.firstname} {self.lastname} and I`m {self.age} years old")
 
 
-a = Person("Carl", "Johnson", "26")
-
+a = Person("Vlad", "Litoshko", "22")
+b = Person("Anastasia", "Kharchenko", "19")
 a.talk()
+b.talk()
