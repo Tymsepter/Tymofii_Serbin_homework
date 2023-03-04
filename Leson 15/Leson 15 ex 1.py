@@ -17,4 +17,3 @@ a = Person("Vlad", "Litoshko", "22")
 b = Person("Anastasia", "Kharchenko", "19")
 a.talk()
 b.talk()
-
