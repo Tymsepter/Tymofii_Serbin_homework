@@ -10,8 +10,12 @@ class Person:
 
 
 class Student(Person):
-    def __init__(self, name, surname, age, gender):
+    def __init__(self, name, surname, age, gender, scholarship):
         super().__init__(name, surname, age, gender)
+        self.scholarship = scholarship
+
+    def __repr__(self):
+        return f"{self.name}, {self.surname}, {self.age}, {self.gender}, {self.scholarship}"
 
 
 class Teacher(Person):
@@ -24,7 +28,7 @@ class Teacher(Person):
 
 
 teacher = Teacher("Fadi", "Ahmad", 26, "male", "1000$")
-student = Student("Tymofii", "Serbin", 20, "male")
+student = Student("Tymofii", "Serbin", 20, "male", "50$")
 
 print(repr(teacher))
 print(repr(student))
