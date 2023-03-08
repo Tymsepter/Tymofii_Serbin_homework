@@ -7,6 +7,6 @@ class CustomException(Exception):
 
 
 try:
-    raise CustomException("Something went wrong")
+    raise CustomException("Something went wrong again")
 except CustomException as e:
     print("Exception occurred: ", e.msg)
