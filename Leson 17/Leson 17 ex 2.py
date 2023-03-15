@@ -1,5 +1,5 @@
 class Author:
-    def __init__(self, name: str, country: str, birth_date: str):
+    def __init__(self, name, country, birth_date):
         self.name = name
         self.country = country
         self.birth_date = birth_date
@@ -15,7 +15,7 @@ class Author:
 class Book:
     total_books = 0
 
-    def __init__(self, name: str, year: int, author: Author):
+    def __init__(self, name, year: int, author: Author):
         self.name = name
         self.year = year
         self.author = author
@@ -30,12 +30,12 @@ class Book:
 
 
 class Library:
-    def __init__(self, name: str):
+    def __init__(self, name):
         self.name = name
         self.books = []
         self.authors = []
 
-    def new_book(self, name: str, year: int, author: Author):
+    def new_book(self, name, year: int, author: Author):
         book = Book(name, year, author)
         self.books.append(book)
 
